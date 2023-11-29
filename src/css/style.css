@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Libre_Franklin);
+}
+
+.logo {
+    margin-top: 85px;
+}
+
+.section-primary h1 {
+    font-size: 48px;
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    letter-spacing: .2px;
+    margin-top: 48px;
+}
+
+.section-primary h1 span {
+    color: var(--Gray);
+    font-weight: 400;
+}
+
+.section-primary p {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -.1px;
+    color: var(--Gray);
+    margin-top: 17px;
+}
+
+.div-email {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.div-email .input-email {
+    width: 420px;
+    height: 55px;
+    font-size: 16px;
+    letter-spacing: .3px;
+    padding-left: 28px;
+    border: 2px solid hsl(0, 0%, 59%, .4);
+    border-radius: 30px;
+}
+
+.div-email .input-email::placeholder {
+    color: hsl(0, 0%, 59%, .4);
+}
+
+.div-email .btn-submit {
+    width: 200px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: var(--Blue);
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+}
+
+.div-email .btn-submit:hover,
+.section-secondary .social-ul li:hover {
+    cursor: url(https://github.com/HumbertoFox/repository/assets/126817628/ef5feb7b-75d4-47ee-a596-7be253492ebd), auto;
+    background-color: var(--Blue);
+    opacity: .8;
+}
+
+.section-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 86px;
+}
+
+.section-secondary .ilustration {
+    max-width: 640px;
+}
+
+.section-secondary .social-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 75px;
+}
+
+.section-secondary .social-ul li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid hsl(0, 0%, 59%, .4);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+.section-secondary .social-ul li a {
+    color: var(--Blue);
+    cursor: url(https://github.com/HumbertoFox/repository/assets/126817628/ef5feb7b-75d4-47ee-a596-7be253492ebd), auto;
+    transition: .3s ease-in-out;
+}
+
+.section-secondary .social-ul li:hover a {
+    color: #FFF;
+}
+
+.section-secondary p {
+    align-self: center;
+    font-size: 12px;
+    font-family: var(--Libre_Franklin);
+    color: var(--Gray);
+    margin-top: 25px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
