@@ -38,7 +38,7 @@ body {
 
 .section-primary p {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: -.1px;
     color: var(--Gray);
     margin-top: 17px;
@@ -46,7 +46,6 @@ body {
 
 .div-email {
     display: flex;
-    gap: 18px;
     margin-top: 40px;
 }
 
@@ -56,11 +55,17 @@ body {
     font-size: 16px;
     letter-spacing: .3px;
     padding-left: 28px;
+    margin-right: 17px;
     border: 2px solid hsl(0, 0%, 59%, .4);
     border-radius: 30px;
 }
 
+.div-email .input-email.error {
+    border: 2px solid hsl(354, 100%, 66%, .4);
+}
+
 .div-email .input-email::placeholder {
+    font-size: 16px;
     color: hsl(0, 0%, 59%, .4);
 }
 
@@ -72,6 +77,7 @@ body {
     color: #FFF;
     background-color: var(--Blue);
     border-radius: 30px;
+    box-shadow: 0px 8px 10px hsla(223, 87%, 63%, .3); 
     transition: .3s ease-in-out;
 }
 
@@ -82,11 +88,20 @@ body {
     opacity: .8;
 }
 
+i.error-message {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(354, 100%, 66%, .6);
+    padding-left: 30px;
+    margin-top: 8px;
+}
+
 .section-secondary {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 86px;
+    margin-top: 80px;
 }
 
 .section-secondary .ilustration {
