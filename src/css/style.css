@@ -49,7 +49,12 @@ body {
     margin-top: 40px;
 }
 
-.div-email .input-email {
+.div-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-input .input-email {
     width: 420px;
     height: 55px;
     font-size: 16px;
@@ -60,11 +65,11 @@ body {
     border-radius: 30px;
 }
 
-.div-email .input-email.error {
+.div-input .input-email.error {
     border: 2px solid hsl(354, 100%, 66%, .4);
 }
 
-.div-email .input-email::placeholder {
+.div-input .input-email::placeholder {
     font-size: 16px;
     color: hsl(0, 0%, 59%, .4);
 }
@@ -88,7 +93,7 @@ body {
     opacity: .8;
 }
 
-i.error-message {
+.div-input .error-message {
     align-self: flex-start;
     font-size: 12px;
     font-weight: 600;
@@ -101,7 +106,7 @@ i.error-message {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 87px;
 }
 
 .section-secondary .ilustration {

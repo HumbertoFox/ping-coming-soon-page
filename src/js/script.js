@@ -1,5 +1,4 @@
 const selectInputEmail = document.getElementById("input-email");
-const selectDivEmail = document.querySelector(".div-email");
 const selectSectionSec = document.querySelector(".section-secondary");
 
 
@@ -15,12 +14,12 @@ document.querySelector(".btn-submit").addEventListener("click", () => {
         if(resolutionWidth > 660) {
         removeIText();
         selectInputEmail.classList.add("error");
-        selectSectionSec.style.marginTop = "57px";
-        selectDivEmail.insertAdjacentHTML("afterend", insertIText);
+        selectSectionSec.style.marginTop = "64px";
+        selectInputEmail.insertAdjacentHTML("afterend", insertIText);
         } else {
             removeIText();
             selectInputEmail.classList.add("error");
-            selectSectionSec.style.marginTop = "52px";
+            selectSectionSec.style.marginTop = "58px";
             selectInputEmail.insertAdjacentHTML("afterend", insertIText);
         };
     };
@@ -32,11 +31,11 @@ function removeIText() {
 
     if (classError.includes("error") && (resolutionWidth > 660)) {
         selectInputEmail.classList.remove("error");
-        selectSectionSec.style.marginTop = "80px";
-        selectDivEmail.nextElementSibling.remove("error-message");
+        selectSectionSec.style.marginTop = "87px";
+        selectInputEmail.nextElementSibling.remove("error-message");
     } else if (classError.includes("error") && (resolutionWidth <= 660)){
         selectInputEmail.classList.remove("error");
-        selectSectionSec.style.marginTop = "100px";
+        selectSectionSec.style.marginTop = "110px";
         selectInputEmail.nextElementSibling.remove("error-message");
     } else {
         return;

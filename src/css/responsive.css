@@ -21,7 +21,7 @@
         margin-top: 51px;
     }
 
-    .div-email .input-email {
+    .div-input .input-email {
         font-size: 20px;
         width: 450px;
         height: 62px;
@@ -36,16 +36,16 @@
         margin-top: 19px;
     }
 
-    .div-email .error-message {
+    .div-input .error-message {
         align-self: center;
         font-size: 16px;
         padding-left: 0px;
-        margin-top: 11px;
+        margin-top: 12px;
         margin-bottom: 20px;
     }
 
     .section-secondary {
-        margin-top: 100px;
+        margin-top: 110px;
     }
 
     .section-secondary .ilustration {
